@@ -83,7 +83,7 @@ img { max-width: 100%; display: block; }
   min-height: 380px;
   padding: 56px 56px 64px;
   border-radius: 18px;
-  background: url('/Images/bg.jpg') center / cover no-repeat;
+  background: url('/bg.jpg') center / cover no-repeat;
   border: 1px solid rgba(255,255,255,.06);
   box-shadow: 0 18px 40px rgba(0,0,0,.5);
   overflow: hidden;
