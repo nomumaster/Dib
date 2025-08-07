@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DatalsBacon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="color-scheme" content="dark light">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#" aria-label="DatalsBacon home">
+        <span class="brand-primary">Datals</span><span class="brand-accent">Bacon</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact Us</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="ri-moon-line" id="themeIcon"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-box">
+          <div class="hero-copy">
+          <h1>
+            Transform your<br/>
+            business and<br/>
+            <span class="text-accent">reclaim wasted<br/>costs</span>
+          </h1>
+          <p class="lead">
+            We find inefficiencies in your processes, reduce hardware spend, automate document extraction and workflows, and deliver modern application and website design.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#get-started">Get Started</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="card-grid">
+          <!-- Card 1 -->
+          <article class="card">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=1400&auto=format&fit=crop" alt="Stack of documents" loading="lazy"/>
+            </div>
+            <div class="card-body">
+              <h3>Document Automation</h3>
+              <p>Automate extraction and management of your documents to free your team from manual work.</p>
+            </div>
+          </article>
+          <!-- Card 2 -->
+          <article class="card">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1400&auto=format&fit=crop" alt="Calculator and graphs" loading="lazy"/>
+            </div>
+            <div class="card-body">
+              <h3>Cost Analysis & Optimization</h3>
+              <p>Analyze your billing to uncover waste, enable accurate recurring spend, and identify optimization opportunities.</p>
+            </div>
+          </article>
+          <!-- Card 3 -->
+          <article class="card">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop" alt="Team designing app" loading="lazy"/>
+            </div>
+            <div class="card-body">
+              <h3>Application & Web Design</h3>
+              <p>Design and deploy responsive web and mobile applications tailored to your business from concept to launch.</p>
+            </div>
+          </article>
+          <!-- Card 4 -->
+          <article class="card">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=1400&auto=format&fit=crop" alt="Team training" loading="lazy"/>
+            </div>
+            <div class="card-body">
+              <h3>Technology Training</h3>
+              <p>Equip your team with the knowledge to harness new technologies and accelerate delivery.</p>
+            </div>
+          </article>
+          <!-- Card 5 -->
+          <article class="card">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=1400&auto=format&fit=crop" alt="Security lock" loading="lazy"/>
+            </div>
+            <div class="card-body">
+              <h3>Security Audit & Compliance</h3>
+              <p>Identify vulnerabilities and maintain compliance with industry standards and best practices.</p>
+            </div>
+          </article>
+          <!-- Card 6 -->
+          <article class="card">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?q=80&w=1400&auto=format&fit=crop" alt="Handshake partnership" loading="lazy"/>
+            </div>
+            <div class="card-body">
+              <h3>Acquisition Assistance & Custom Solutions</h3>
+              <p>Support your growth with vendor selection, procurement, and tailored software solutions.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> DatalsBacon. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

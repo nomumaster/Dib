@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us • DatalsBacon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="DatalsBacon home">
+        <span class="brand-primary">Datals</span><span class="brand-accent">Bacon</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="index.html#services">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact Us</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="ri-moon-line" id="themeIcon"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p class="lead">Tell us about your project. Required fields are marked with *</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <form id="contactForm" class="form-card">
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="name">Name *</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+          </div>
+
+          <fieldset class="form-field">
+            <legend>Services Interested In</legend>
+            <div class="checks">
+              <label><input type="checkbox" name="services" value="Document Automation" /> Document Automation</label>
+              <label><input type="checkbox" name="services" value="Cost Analysis & Optimization" /> Cost Analysis & Optimization</label>
+              <label><input type="checkbox" name="services" value="Application & Web Design" /> Application & Web Design</label>
+              <label><input type="checkbox" name="services" value="Technology Training" /> Technology Training</label>
+              <label><input type="checkbox" name="services" value="Security Audit & Compliance" /> Security Audit & Compliance</label>
+              <label><input type="checkbox" name="services" value="Acquisition Assistance & Custom Solutions" /> Acquisition Assistance & Custom Solutions</label>
+            </div>
+          </fieldset>
+
+          <div class="form-field">
+            <label for="details">Additional Details</label>
+            <textarea id="details" name="details" rows="6" placeholder="Tell us about your goals, timeline, and constraints..."></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary"><i class="ri-send-plane-2-line" aria-hidden="true"></i> Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> DatalsBacon. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
